@@ -1,0 +1,19 @@
+!SESSION Wed Feb 17 06:14:47 PST 2021 ------------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2021-02-17 06:14:47.849
+!MESSAGE Exception launching the Eclipse Platform:
+!STACK
+java.lang.NoClassDefFoundError: org/eclipse/osgi/framework/log/FrameworkLogEntry
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:261)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.osgi.framework.log.FrameworkLogEntry
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 8 more
+
